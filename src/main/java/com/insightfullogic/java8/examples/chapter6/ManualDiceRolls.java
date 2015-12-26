@@ -21,6 +21,7 @@ public class ManualDiceRolls {
         roles.simulateDiceRoles();
     }
 
+
     public ManualDiceRolls() {
         fraction = 1.0 / N;
         results = new ConcurrentHashMap<>();
