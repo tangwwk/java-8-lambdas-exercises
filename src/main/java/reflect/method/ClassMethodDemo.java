@@ -1,5 +1,8 @@
 package reflect.method;
 
+import reflect.dynamicload.OfficeAble;
+import reflect.dynamicload.Word;
+
 /**
  * Created by tang on 2015/12/7.
  */
@@ -11,7 +14,7 @@ public class ClassMethodDemo {
 
 //        Double dbl = 76.67;
 //        ClassUtils.getClassInfo(dbl);
-//        OfficeAble officeAble = new Word();
-//        ClassUtils.getClassInfo(officeAble);
+        OfficeAble officeAble = new Word();
+        ClassUtils.getClassInfo(officeAble);
     }
 }

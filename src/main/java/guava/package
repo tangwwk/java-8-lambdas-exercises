@@ -1,0 +1,11 @@
+Guava Cache
+
+如何使用Guava Cache构建Java内存基本的缓存，Guava Cache缓存类似于ConcurrentMap，但不完全相同。
+最根本的区别是，ConcurrentMap会持续添加到其中的所有元素，如果你不手动删除它们会一直存在。
+然而Guava Cache可以通过缓存的大小，过期时间，或者其他策略自动地移除元素，来限制其内存占用。
+Guava Cache有两种方式实现，
+    一种是CacheLoader在定义的时候就设置好缓存的源，
+    另一种是Callable在调用缓存的时候指定如果缓存中没有的获取的方式。
+
+    http://www.majiang.life/blog/simple-in-memory-cache-in-java/
+    https://github.com/google/guava/wiki/CachesExplained

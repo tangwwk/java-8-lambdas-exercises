@@ -87,10 +87,10 @@ public Map<Artist, List<String>> nameOfAlbumsDumb(Stream<Album> albums) {
     // END NAME_OF_ALBUMS_DUMB
 
     // BEGIN NAME_OF_ALBUMS
-public Map<Artist, List<String>> nameOfAlbums(Stream<Album> albums) {
-    return albums.collect(groupingBy(Album::getMainMusician,
-                                     mapping(Album::getName, toList())));
-}
+    public Map<Artist, List<String>> nameOfAlbums(Stream<Album> albums) {
+        return albums.collect(groupingBy(Album::getMainMusician,
+                                         mapping(Album::getName, toList())));
+    }
     // END NAME_OF_ALBUMS
 
     public static Map<String, Long> countWords(Stream<String> words) {
